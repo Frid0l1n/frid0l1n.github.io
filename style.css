@@ -4,6 +4,20 @@ body{
     flex-direction: column;
     margin: 0;
     padding: 0;
+    padding-right: 15%;
+    padding-left: 15%;
+    background-color: #2f3136;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.p-body{
+    font-size: 1.2rem;
+}
+
+a{
+    color: #9da1a4;
+    text-decoration: none;
 }
 
 nav{
@@ -17,9 +31,16 @@ nav{
     padding: 1rem;
 }
 
+.nav-items a:hover{
+    background-color:#9da1a4;
+    border-radius: 5%;
+}
+
 .nav-items a{
+    font-size: 1.2rem;
     padding: 1rem;
     text-decoration: none;
+    color: #ffffff;
 }
 
 footer{
@@ -39,8 +60,18 @@ footer{
     text-decoration: none;
 }
 
+i {
+    color: #ffffff;
+}
+
+.footer-items i:hover{
+    background-color: #9da1a4;
+    border-radius: 5%;
+}
+
 .footer-copyright{
     font-size: small;
     text-align: center;
     padding-bottom: 1rem;
+    color: #ffffff;
 }
