@@ -54,6 +54,8 @@ nav{
 .nav-items a:hover{
     background-color: var(--accent);
     border-radius: 5%;
+    opacity: 100%;
+    transition: 0.7s;    
 }
 
 .nav-items a{
@@ -123,11 +125,31 @@ h2 {
     margin: 0;
 }
 
+h4{
+    color: var(--accent);
+}
+
 img {
     border: 2px solid var(--accent);
     box-shadow: 0 0px 6px var(--accent), 0 0px 6px var(--accent);
     max-width: 100%;
     height: auto;
+}
+
+button{
+    border-color: var(--accent);
+    border-radius: 5%;
+    padding: 0.5rem 0.5rem;
+    background-color: var(--bg-main);
+    color: var(--text);
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+
+small{
+    color: var(--text);
+    font-size: 0.7rem;
 }
 
 a {
@@ -147,6 +169,12 @@ a:hover {
 ul {
     list-style: none;
     padding: 0;
+}
+
+hr{
+    border: 1px solid var(--accent);
+    opacity: 30%;
+    width: 100%;
 }
 
 .user-info {
