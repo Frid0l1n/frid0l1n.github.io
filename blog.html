@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="script" href="script.js">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <script src="script.js" defer></script>
     <link rel="icon" type="image/x-icon" href="">
 </head>
 
@@ -23,11 +24,16 @@
         </div>
     </nav>
 
-    <H1>All Posts</H1>
+    <main class="container">
+        <section class="intro">
+            <div class="user-info"></div>
+        </section>
 
-    <form>
-        <input type="text" id="article" name="article" size="75" placeholder="Search article" autofocus><br>
-    </form>
+        <section class="repos">
+            <input type="text" class="filter-repos hide" placeholder="Search Projects" />
+            <ul class="repo-list"></ul>
+        </section>
+    </main>
 
     <footer>
         <div class="footer-items">
