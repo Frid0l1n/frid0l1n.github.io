@@ -32,12 +32,18 @@ body{
 }
 
 .p-body{
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 a{
     color: var(--accent);
     text-decoration: none;
+}
+
+h5{
+    color: var(--accent);
+    font-size: 1rem;
+    margin-bottom: 0.7rem;
 }
 
 nav{
@@ -157,6 +163,10 @@ a {
     text-decoration: none;
 }
 
+b{
+    color: var(--text);
+}
+
 a:hover {
     color: var(--text);
 }
@@ -241,6 +251,19 @@ input {
     margin-bottom: 4em;
 }
 
+.attention {
+    display: flex;
+    align-items: center;
+}
+
+.attention i{
+    margin-right: 0.5rem;
+}
+
+.attention p{
+    font-size: small;
+}
+  
 h3 {
     margin: 4px;
     width: 100%;
@@ -316,4 +339,8 @@ h3 {
     .repo-list li {
         width: 30%;
     }
+}
+
+.bio p{
+    margin: 0.4rem;
 }
