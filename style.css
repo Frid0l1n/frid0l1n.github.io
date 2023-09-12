@@ -169,7 +169,7 @@ a {
 }
 
 b{
-    color: var(--text);
+    color: var(--accent-2);
 }
 
 a:hover {
