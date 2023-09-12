@@ -1,16 +1,20 @@
 @media (prefers-color-scheme: light) {
     :root {
-        --text: #2f3136;
-        --accent: #9d9d9d;
-        --bg-main: #ffffff;
+        --text: #333333;
+        --accent: #007BFF;
+        --accent-2: #FF6B6B;
+        --bg-main: #F5F5F5;
+        --header-footer: #FFFFFF;
     }
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --text: #ffffff;
-        --accent: #9d9d9d;
-        --bg-main: #2f3136;
+        --text: #E0E0E0;
+        --accent: #3498DB;
+        --accent-2: #FFA07A;
+        --bg-main: #121212;
+        --header-footer: #1E1E1E;
     }
 }
 
@@ -77,6 +81,7 @@ footer{
 }
 
 .footer-items{
+    color: var(--header-footer);
     display: flex;
     justify-content: center;
 }
