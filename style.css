@@ -50,6 +50,10 @@ h5{
     margin-bottom: 0.7rem;
 }
 
+h6{
+    color: var(--accent)
+}
+
 nav{
     list-style-type: none;
 }
