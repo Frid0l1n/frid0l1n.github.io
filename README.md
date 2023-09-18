@@ -11,9 +11,6 @@ Coding my personal website. The go to's are.
 - Blog
 - Projects
 - About
-- Supporters
-- Resume
-- Setup
 
 ### aim of the page
 Fun, learning how to create a webpage, get in touch with other dev's and collaboration with other interested guys
