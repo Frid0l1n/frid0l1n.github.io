@@ -95,7 +95,6 @@ h6{
     color: var(--text); /* Change text color on hover if needed */
 }
 
-
 footer{
     list-style-type: none;
     margin-top: auto;
@@ -204,11 +203,6 @@ a:hover {
 .github-img {
     width: 45px;
     margin-right: 8px;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
 }
 
 hr{
