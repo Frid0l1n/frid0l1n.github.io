@@ -150,6 +150,10 @@ h1 {
     margin-bottom: 4px;
 }
 
+.index{
+    padding-top: 20%;
+}
+
 h2 {
     width: 100%;
     text-align: center;
@@ -344,29 +348,11 @@ h3 {
     margin: 0.4rem;
 }
 
-.posts{
+.blog{
+    padding-top: 5rem;
     display: flex;
-    align-items: center;
+    justify-content: center;
 }
-
-.posts i{
-    margin-right: 0.5rem;
-}
-
-.blog-card{
-    box-shadow: 0 0.1rem 0.2rem 0 var(--accent);
-    transition: 0.3s;
-    border-radius: 0.1rem;
-}
-
-.blog-card:hover{
-    box-shadow: 0 0.2rem 0.4rem 0 var(--accent);
-}
-
-.container-blog{
-    padding: 0.1rem 0.4rem;
-}
-
 
 @media (min-width: 700px) {
     .user-info div {
