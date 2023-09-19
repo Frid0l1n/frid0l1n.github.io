@@ -32,7 +32,7 @@ body{
     padding-left: 15%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--text);
-    background-color: var(--bg-main);   
+    background-color: var(--bg-main);
 }
 
 .p-body{
@@ -54,30 +54,47 @@ h6{
     color: var(--accent)
 }
 
-nav{
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: auto; /* Pushes the logo to the left */
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--accent); /* Set the desired color */
+    text-decoration: none;
+}
+
+.logo a:hover {
+    color: var(--text); /* Change color on hover if needed */
+}
+
+/* Adjust nav-items styles to align to the right */
+.nav-items {
+    display: flex;
+    justify-content: flex-end; /* Align to the right */
+    align-items: center;
     list-style-type: none;
 }
 
-.nav-items{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 1rem;
-}
-
-.nav-items a:hover{
-    background-color: var(--accent);
-    border-radius: 5%;
-    opacity: 100%;
-    transition: 0.7s;    
-}
-
-.nav-items a{
+/* Adjust nav-items a styles to match the logo */
+.nav-items a {
     font-size: 1.2rem;
     padding: 1rem;
     text-decoration: none;
     color: var(--accent);
 }
+
+.nav-items a:hover {
+    background-color: var(--accent);
+    border-radius: 5%;
+    opacity: 100%;
+    transition: 0.7s;
+    color: var(--text); /* Change text color on hover if needed */
+}
+
 
 footer{
     list-style-type: none;
