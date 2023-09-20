@@ -28,11 +28,14 @@ body{
     flex-direction: column;
     margin: 0;
     padding: 0;
-    padding-right: 15%;
-    padding-left: 15%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--text);
     background-color: var(--bg-main);
+}
+
+.content{
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 .p-body{
@@ -54,45 +57,74 @@ h6{
     color: var(--accent)
 }
 
-.logo {
+nav {
+    padding-left: 15%;
+    padding-right: 15%;
+    height: 4rem;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    margin-right: auto; /* Pushes the logo to the left */
 }
 
-.logo a {
-    font-size: 24px;
-    font-weight: bold;
-    color: var(--accent); /* Set the desired color */
-    text-decoration: none;
-}
-
-.logo a:hover {
-    color: var(--text); /* Change color on hover if needed */
-}
-
-/* Adjust nav-items styles to align to the right */
-.nav-items {
-    display: flex;
-    justify-content: flex-end; /* Align to the right */
-    align-items: center;
-    list-style-type: none;
-}
-
-/* Adjust nav-items a styles to match the logo */
-.nav-items a {
+nav .logo {
     font-size: 1.2rem;
-    padding: 1rem;
-    text-decoration: none;
-    color: var(--accent);
+    font-weight: bold;
 }
 
-.nav-items a:hover {
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+    height: 100%;
+}
+
+nav li {
+    height: 100%;
+    width: 6rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+nav li:hover {
     background-color: var(--accent);
+    height: 100%;
     border-radius: 5%;
-    opacity: 100%;
-    transition: 0.7s;
-    color: var(--text); /* Change text color on hover if needed */
+}
+
+nav ul a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; /* Remove underline for links */
+}
+
+input{
+    display: none;
+}
+
+.toggle_button{
+    width: 30px;
+    height: 23px;
+
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bar{
+    height: 4px;
+    width: 100%;
+    background: var(--text);
+    border-radius: 100px;
 }
 
 footer{
@@ -349,7 +381,7 @@ h3 {
     justify-content: center;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 850px) {
     .user-info div {
         width: 45%;
         text-align: left;
@@ -364,7 +396,7 @@ h3 {
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 850px) {
     .user-info div p {
         margin: 10px;
     }
@@ -376,14 +408,60 @@ h3 {
     }
 }
 
-@media (max-width: 700px) {
-    .nav-items {
-        flex-direction: row;
+@media(max-width:850px) {
+
+    nav{
+        padding: 0%;
+    }
+
+    nav .logo{
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+    }
+
+    input{
+        display: none;
+    }
+    .toggle_button{
+        display: flex;
+    }
+
+    body {
+        overflow-x: hidden; /* Hide horizontal scrollbar */
+    }
+
+    main {
+        max-width: 70%; /* Adjust the percentage as needed */
+        margin: auto; /* Center the content */
+        padding: 20px; /* Optional: Add some padding for better readability */
+    }
+
+    nav ul{
+        height: min-content;
+        width: 100%;
+        background-color: var(--bg-main);
+
+        display: none;
+        position: absolute;
+        top: 4rem;
+    }
+
+    nav li{
+        height: min-content;
+        width: 100%;
         text-align: center;
     }
 
-    .nav-items a {
-        padding: 0.3rem;
-        font-size: 0.75rem;
+    nav ul a{
+        padding: 1rem 0;
     }
+    #toggle_button:checked ~ ul{
+        display: block;
+    }
+
+    #toggle_button:checked ~ body{
+        max-width: 70%;
+    }
+
 }
