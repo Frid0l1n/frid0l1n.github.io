@@ -465,3 +465,16 @@ h3 {
     }
 
 }
+
+::-webkit-scrollbar{
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-main);
+}
+  
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--accent);
+}
