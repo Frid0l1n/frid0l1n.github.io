@@ -37,7 +37,7 @@ const displayProfile = (profile) => {
             <p>
                 <strong>@${profile.login} </strong>
                 Repos: ${profile.public_repos}
-                Gists: ${profile.public_gists}
+                Gists: ${profile.public_gists} 
             </p>
         </div>
     `;
